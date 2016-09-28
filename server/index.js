@@ -7,7 +7,10 @@ require('babel-register')({
 })
 
 // use log globally
-global.log = require('./lib/logger')
+if (!global.log) {
+  global.log
+  global.log = require('./lib/logger').log
+}
 
 const AV = require('leanengine')
 const app = require('./lib/app')
