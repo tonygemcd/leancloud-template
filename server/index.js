@@ -6,6 +6,9 @@ require('babel-register')({
   sourceMaps: true
 })
 
+// use log globally
+global.log = require('./lib/logger')
+
 const AV = require('leanengine')
 const app = require('./lib/app')
 const config = require('../config')

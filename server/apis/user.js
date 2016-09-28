@@ -1,7 +1,6 @@
 import express from 'express'
 import AV from 'leanengine'
 import Joi from 'joi'
-import { log } from '../lib/logger'
 
 const router = express.Router()
 
