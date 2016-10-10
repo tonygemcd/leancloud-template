@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser'
 import history from 'connect-history-api-fallback'
 import config from '../../config'
 
-import userApi from '../apis/user'
+import userApi from '../routes/apis/user'
 
 const APP_ROOT_PATH = require('app-root-path')
 
