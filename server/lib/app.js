@@ -21,6 +21,7 @@ app.set('view engine', 'mustache')
  * LeanCloud middleware
  */
 app.use(AV.express())
+app.use(AV.Cloud.CookieSession({ secret: 'arandomstring', maxAge: 3600000, fetchUser: true }))
 
 /**
  * Hot reload middleware
